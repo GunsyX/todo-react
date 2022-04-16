@@ -1,0 +1,17 @@
+
+@font-face {
+    font-family: 'elfboy';
+    src: url('elfboyclassic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'retro';
+    src: url('arcade.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}

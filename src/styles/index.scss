@@ -1,0 +1,20 @@
+// scss import reset styles
+
+@import "./base/_reset.scss";
+@import "./fonts/interweb/inter.css";
+@import "./fonts/robotoweb/stylesheet.css";
+@import "./fonts/georamaweb/stylesheet.css";
+@import "./base/settings.scss";
+@import "./base/_base.scss";
+
+// components
+@import "./components/_header.scss";
+
+//
+
+// pages
+@import "./pages/_todo-page.scss";
+
+// THE MAIN STYLE CODE (EXCEPT BASE CODE) USED IN THIS DEMO
+@import "./fonts/elfboy/stylesheet.css";
+@import "./components/demo";

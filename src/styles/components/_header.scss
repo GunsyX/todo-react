@@ -1,0 +1,81 @@
+.main-header {
+    min-height: 7rem;
+    // background-color: rgb(255, 117, 175);
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5rem 6rem;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.426);
+    backdrop-filter: blur(20px);
+    .mh-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .mh-right {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .mh-navlinks-container {
+        display: flex;
+        margin-left: 5rem;
+        margin-right: 2rem;
+        flex-direction: row;
+    }
+    
+    
+    .logo-wrapper {
+        height: 3.2rem;
+        > img {
+            height: 100%;
+        }
+    }
+
+}
+
+.mh-navlink {
+    color: $grey;
+    margin-right: 2rem;
+    font-size: 1.6rem;
+    background-color: transparent;
+    padding: 1rem 1rem;
+    border-radius: 1.8rem;
+    transition: all 0.2s ease-in-out;
+    // display: block;
+    &:hover {
+        background-color: #F2F5FF;
+        color: $blue;
+        /* background-color: #eaeeff; */
+        background-color: #eef1ff;
+    }
+    &-bold {
+        @extend .mh-navlink;
+        font-weight: bold;
+        color: #08054E;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 1rem;
+        }
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    &-action {
+        @extend .mh-navlink;
+        color: white;
+        background-color: $blue;
+        padding: 1rem 1.2rem;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        // padding: 0;
+        // font-weight: 400;
+        border: 1px solid $blue;
+    }
+}
