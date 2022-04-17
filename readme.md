@@ -20,9 +20,10 @@ Steps [Ubuntu 20.04]:
 
 Commands:
 - `npm install`: Install all dependencies
-- `npm start`: Start the dev server
-- `npm build:dev`: Make a dev build
+- `npm start`: Start the dev server and automated builds with Hot module replacement and react-refresh
+- `npm run build:dev`: Make a dev build
 - `npm run build:prod`: Make a production build
+- `npm run start:prod`: Start the production server (only after making a build)
 
 Run `npm run start` on the project root directory.
 Access the demo at `http://127.0.0.1:4000/` on your local host.
