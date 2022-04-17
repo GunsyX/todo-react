@@ -4,7 +4,6 @@
     "description": "A secure, minimalistic todo list made for Airdev.live",
     "main": "index.js",
     "scripts": {
-        "test": "test",
         "start": "webpack-dev-server --config webpack.config.js --hot",
         "build:dev": "webpack build --mode=development",
         "build:prod": "webpack build --mode=production"
