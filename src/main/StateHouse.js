@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import GeneralContext from '../context/general';
 import UserContext from '../context/user';
-import getWinText from '../misc/win_text';
 import str from '../misc/strings';
 import useDataHandler from './handleMainData';
 import useUserHandler from './handleUsers';
