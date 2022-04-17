@@ -10,10 +10,6 @@ const TodoPage = () => {
     const { logoutUser, user } = useContext(UserContext);
     const { tasks, deleteTask } = useContext(GeneralContext);
     const getUserTasks = (tasks) => {
-        console.log({user});
-        console.log(user.id);
-        console.log(tasks.filter(task => task.userID === user.id));
-        console.log({userTasks: tasks.filter(task => task.userID === user.id)})
         return tasks.filter(task => task.userID === user.id);
     }
     const [ userTasks, setUserTasks ] = useState(getUserTasks(tasks));

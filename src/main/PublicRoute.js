@@ -15,6 +15,7 @@ const PublicRoute = ({path, children, strictRoute}) => {
                             <>
                                 
                                 {
+                                    // if not logged in or strictRoute is false, then proceed to the page
                                     !user.username || !strictRoute?
                                     children:
                                     <Navigate to="/todo" />

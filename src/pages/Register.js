@@ -68,7 +68,6 @@ const Register = () => {
             password2
         }
         const result = handleValidate(validations, values);
-        console.log({result});
         setFormErrors(result);
         if(result.length>0){
             return false;

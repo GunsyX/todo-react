@@ -11,7 +11,7 @@ const PrivateRoute = ({path, children}) => {
             {
                 (
                     <Routes>
-                        <Route path={path} element={ //main route
+                        <Route path={path} element={
                             <>
                                 
                                 {

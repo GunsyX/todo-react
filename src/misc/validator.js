@@ -73,7 +73,7 @@ const customValidations = (requirement, value, valueArray) => {
             results.push(null);
         }
     });
-    // return one error.
+    // return only one error per field.
     return results.find(e=>e!==null) || null;
 }
 
@@ -124,7 +124,7 @@ const handleValidate = (validations, values) => {
                         })
                     }
                 }
-            } // do nothing if its `errors`.
+            } // do nothing if vType is `errors`.
         }
     }
     // tree shake errors

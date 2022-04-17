@@ -12,8 +12,6 @@ const validate = {
         required: 'Password is required',
         minLength: 'Password must be at least 8 characters',
         maxLength: 'Password must be at most 300 characters',
-        //repeated characters error
-        //dictionary words error
     },
     password2: {
         required: 'Repeat the password',

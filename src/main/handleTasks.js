@@ -1,7 +1,6 @@
 import { nanoid } from 'nanoid';
 import React, { useState, useEffect, useRef } from 'react';
 import str from '../misc/strings';
-const { requestErrors: re } = str;
 
 const useTaskHandler = ({data, setData, user}) => {
     const [tasks, setTasks] = useState(data.tasks || []);
@@ -11,7 +10,7 @@ const useTaskHandler = ({data, setData, user}) => {
             name: taskData.name,
             desc: taskData.desc,
             userID: user.id,
-            status: 'todo'
+            status: 'todo' //todo, progress, done
         }
         setTasks([...tasks, newTask]);
         return {error: null};
@@ -33,21 +32,15 @@ const useTaskHandler = ({data, setData, user}) => {
     }
 
     useEffect(()=>{
-        console.log('setData, handleUsers useEffect bind run 26 line')
-        // if(){
-            setData(data => {
-                //filter out user
-                //add in the new user data
-                // const users = data.users.filter(user => user.username !== user.username);
-                // users.push(user);
-                const newData = {
-                    ...data,
-                    tasks
-                }
-                console.log({newData});
-                return newData;
-            });
-        // }
+        // whenever tasks change, update main data state.  
+        setData(data => {
+            const newData = {
+                ...data,
+                tasks
+            }
+            console.log({newData});
+            return newData;
+        });
     }, [tasks]);
 
     return ({tasks, setTasks, createTask, editTask, deleteTask});

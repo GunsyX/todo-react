@@ -7,11 +7,10 @@ const MainApp = () => {
 
     return (
         <>
-            <StateHouse /*props to pass to statehouse*/ >
+            <StateHouse>
                 <AppRouter />
             </StateHouse>
         </>
-        // app router and stuff
     )
 }
 

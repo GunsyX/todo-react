@@ -27,10 +27,7 @@ const TaskPage = () => {
     const searchParams = new URLSearchParams(location.search);
 
     const processTaskID = (id) => {
-        console.log(id);
-        console.log({tasks});
         const task = tasks.find(task => task.id === id);
-        console.log({task});
         if(task.userID === user.id){
             return task;
         }else{
@@ -86,7 +83,6 @@ const TaskPage = () => {
             desc
         }
         const result = handleValidate(validations, values);
-        console.log({result});
         setFormErrors(result);
         if(result.length>0){
             return false;
@@ -134,10 +130,6 @@ const TaskPage = () => {
             return "Add some details";
         }
     }
-
-    useEffect(()=>{
-        console.log(name)
-    }, [name]);
 
     return (
         <div className='h-100 col d-flex flex-column justify-content-center align-items-center'>

@@ -16,16 +16,11 @@ const StateHouse = ({children}) => {
     const userContextValue = {
         user, loginUser, registerUser, logoutUser
     }
-
     const generalContextValue = {
         tasks, setTasks, createTask, editTask, deleteTask
     };
-
     return (
-        // provider and stufF? and children, and OverlayManager
-
         <>
-            {/* statehouse. */}
             <UserContext.Provider value={userContextValue}>
                 <GeneralContext.Provider value={generalContextValue}>
                     {children}

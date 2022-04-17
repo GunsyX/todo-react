@@ -12,6 +12,7 @@ const PageRoutes = () => {
 
     return (
         <>
+        
             <PrivateRoute path="/todo">
                 <TodoPage />
             </PrivateRoute>
@@ -43,5 +44,7 @@ const PageRoutes = () => {
         </>
     )
 }
+
+// Strict public routes are only accessible if the user is not logged in, where as normal puhlic routes are accessible to all users, logged in or not.
 
 export default PageRoutes;

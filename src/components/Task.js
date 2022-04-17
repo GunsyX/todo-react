@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import GeneralContext from '../context/general';
 
 const Task = ({task}) => {
+    const { deleteTask, editTask } = useContext(GeneralContext);
     const navigate = useNavigate();
     const goToPage = (url) => {
         navigate(url);
     }
-    const { deleteTask, editTask } = useContext(GeneralContext);
 
     const changeStatus = () => {
         let newStatus = '';
