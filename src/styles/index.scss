@@ -4,13 +4,13 @@
 @import "./fonts/georamaweb/stylesheet.css";
 @import "./fonts/elfboy/stylesheet.css";
 
+// THE MAIN STYLE CODE (EXCEPT BASE CODE) USED IN THIS DEMO
+@import "./base/settings.scss";
+@import "./base/_base.scss";
+
 // components
 //
 
 // pages
 @import "./pages/_todo-page.scss";
-
-// THE MAIN STYLE CODE (EXCEPT BASE CODE) USED IN THIS DEMO
-@import "./base/settings.scss";
-@import "./base/_base.scss";
-@import "./components/demo";
+//
